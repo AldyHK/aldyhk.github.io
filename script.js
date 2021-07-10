@@ -1,5 +1,5 @@
 function message() {
-const message = "hbd to me",
+const message = "hbdtome",
    messageText = document.querySelectorAll(".message__text"),
    messageSplit = message.split(""),
       messageContainer = document.querySelector(".message"),
