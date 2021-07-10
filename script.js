@@ -1,5 +1,5 @@
 function message() {
-const message = "happy birthday",
+const message = "happy birthday to me",
    messageText = document.querySelectorAll(".message__text"),
    messageSplit = message.split(""),
       messageContainer = document.querySelector(".message"),
@@ -51,7 +51,7 @@ letterMain.forEach(function (el) {
     el.style.color = colors[i];
       i++;
 });
-}
+
 
 message();
 
