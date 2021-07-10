@@ -1,3 +1,18 @@
+function message() {
+const message = "happy birthday",
+   messageText = document.querySelectorAll(".message__text"),
+   messageSplit = message.split(""),
+      messageContainer = document.querySelector(".message"),
+      messageBtn = document.querySelector(".message__btn"),
+      reloadBtn = document.querySelector(".reload"),
+      particlesContainer = document.getElementById("particles-js");
+
+const colors = ["#f7b267", "#f79d65", "#f4845f", "#f27059", "#f25c54"];
+let i = 0;
+
+messageBtn.addEventListener("click", openMessage);
+reloadBtn.addEventListener("click", openMessage);
+
 //Open Message
 function openMessage() {
        if(messageContainer.classList.contains("clicked")) {
