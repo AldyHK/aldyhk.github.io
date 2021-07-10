@@ -51,7 +51,7 @@ letterMain.forEach(function (el) {
     el.style.color = colors[i];
       i++;
 });
-
+}
 
 message();
 
