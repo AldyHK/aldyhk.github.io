@@ -124,7 +124,7 @@ section .row:nth-child(even) div:nth-child(2){
     color: #fff;
     width: 400px;
     height: 100px;
-    padding: 20px 20px;
+    padding: 15px 0;
     backdrop-filter: blur(10px);
     border-radius: 20px;
     border-top: 1px solid rgba(255, 255, 255, 0.5);
