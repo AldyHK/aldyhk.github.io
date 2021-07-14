@@ -116,8 +116,8 @@ section .row:nth-child(even) div:nth-child(2){
 
 .kartu{
     position: absolute;
-    top: calc(50% - 70px);
-    left: calc(50% - 220px);
+    top: calc(50% - 65px);
+    left: calc(50% - 200px);
     display: flex;
     justify-content: center;
     align-items: center;
