@@ -984,9 +984,13 @@
 	VanillaTilt.init(document.querySelector(".kartu"), {
 		max: 15,
 		speed: 700,
-        glare: true,
+                glare: true,
 		gyroscope: true,
-        "max-glare": 0.3
+		gyroscopeMinAngleX: -15,
+                gyroscopeMaxAngleX:  15,      
+ 	        gyroscopeMinAngleY: -15,     
+	        gyroscopeMaxAngleY:  15, 
+                "max-glare": 0.3
 	});
 </script>
 </body>
