@@ -1,159 +1,997 @@
-<!--
- ▄▄▄       ██▓    ▓█████▄▓██   ██▓
-▒████▄    ▓██▒    ▒██▀ ██▌▒██  ██▒
-▒██  ▀█▄  ▒██░    ░██   █▌ ▒██ ██░
-░██▄▄▄▄██ ▒██░    ░▓█▄   ▌ ░ ▐██▓░
- ▓█   ▓██▒░██████▒░▒████▓  ░ ██▒▓░
- ▒▒   ▓▒█░░ ▒░▓  ░ ▒▒▓  ▒   ██▒▒▒ 
-  ▒   ▒▒ ░░ ░ ▒  ░ ░ ▒  ▒ ▓██ ░▒░ 
-  ░   ▒     ░ ░    ░ ░  ░ ▒ ▒ ░░  
-      ░  ░    ░  ░   ░    ░ ░     
-                   ░      ░ ░     
-
-    Hewwo~
-    Wah, ada yang buka view-source nih... (*￣3￣)╭
-    Mohon maaf lahir batin mas/mbak... (～￣▽￣)～
-    
-    Mau cek apa disini? hmm? :>
-
-    Gw kasih info aja deh :
-        Saya hosting nih web di github-pages (sering disebut github.io)
-        Custom Domainnya beli di NiagaHoster, harganya 18rb rupiah/1tahun, selebihnya 140rb/tahun
-        SSL/HTTPS, DNS Record Management, DDOS-Protection, dan DNS Proxy semuanya saya pakai Cloudflare
-        Metode domain : Parking Domain
-        Tipe : Pure HTML + CSS + JS (Rencana mau pindah ke React + GatsbyJS + Tailwind; Masih belajar)
-        Waktu pengerjaan : H-1 Idul Adha, 1 Jam
-
-        Library, CSS method, Animation CSS3, JS library, Fonts dan semacamnya liat aja dibawah... 🤣
- -->
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>    
     <title>aldy.xyz</title>
-    <style type="text/css">
-    @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Merienda:wght@700&display=swap');
-        *{
-            margin: 0;
-            padding: 0;
-        }
-
-        body{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            background-color: #000;
-            color: #fff;
-            text-align: center;
-            overflow: hidden;
-        }
-
-        span{
-            font-family: 'Caveat', cursive;
-            font-size: 4rem;
-            flex-wrap: wrap;
-            opacity: 0;
-            margin: 20px;
-            animation: 
-                .4s linear 1s forwards cie-ngintip-kodingan-awowkwk,
-                .4s linear 4s forwards anjay;
-            }
-        
-        .warper{
-            position: fixed;
-            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url("https://source.unsplash.com/1920x1080/?mosque");
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center center;
-            opacity: 0;
-            height: 100vh;
-            width:100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            animation: 
-                2s ease-in-out 5s forwards cie-ngintip-kodingan-awowkwk;
-        }
-        
-
-
-        .ucapan{
-            backdrop-filter: blur(3px);
-            width:100%;
-            height: 100vh;
-            display: inline-flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-
-        p{
-            font-size: 6rem;
-            font-family: 'Merienda', cursive;
-            margin: 0 20px;
-        }
-
-        a{
-            text-decoration: none;
-            color: white;
-            position: fixed;
-            bottom: 50px;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-
-
-        @keyframes cie-ngintip-kodingan-awowkwk {
-            0%{
-                opacity: 0;
-            }
-            100%{
-                opacity: 1;
-            }
-        }
-
-        @keyframes anjay {
-            0%{
-                opacity: 1;
-            }
-            100%{
-                opacity: 0;
-            }
-        }
-
-        
-        @media screen and (max-width: 600px) {
-            span{
-                font-size: 2rem;
-            }
-            p{
-                font-size: 3rem;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <span>Saya Aldy Hakim dan sekeluarga mengucapkan...</span>
-    <div class="warper" id="warper">
-        <div class="ucapan">
-            <p>SELAMAT HARI RAYA</p>
-            <p>IDUL ADHA</p>
-            <p>1442H</p>
-            <a href="javascript:test();" id="tombol"><u>Ganti Background?</u></a>
+<section>
+    <div class="row">
+        <div>
+            <i class='bx bx-window-alt' ></i>
+            <i class='bx bx-cctv' ></i>
+            <i class='bx bx-check-shield' ></i>
+            <i class='bx bx-scan' ></i>
+            <i class='bx bx-data' ></i>
+            <i class='bx bx-git-pull-request' ></i>
+            <i class='bx bx-atom' ></i>
+            <i class='bx bx-joystick' ></i>
+            <i class='bx bx-braille' ></i>
+            <i class='bx bx-code-alt'></i>
+            <i class='bx bx-command' ></i>
+            <i class='bx bx-ghost'></i>
+            <i class='bx bx-lock-open-alt' ></i>
+            <i class='bx bx-memory-card' ></i>
+            <i class='bx bx-notification' ></i>
+            <i class='bx bx-terminal' ></i>
+            <i class='bx bx-link' ></i>
+            <i class='bx bx-pulse' ></i>
+            <i class='bx bx-mouse-alt' ></i>
+            <i class='bx bx-user-voice' ></i>
+            <i class='bx bx-cloud' ></i>
+        </div>
+        <div>
+            <i class='bx bx-window-alt' ></i>
+            <i class='bx bx-cctv' ></i>
+            <i class='bx bx-check-shield' ></i>
+            <i class='bx bx-scan' ></i>
+            <i class='bx bx-data' ></i>
+            <i class='bx bx-git-pull-request' ></i>
+            <i class='bx bx-atom' ></i>
+            <i class='bx bx-joystick' ></i>
+            <i class='bx bx-braille' ></i>
+            <i class='bx bx-code-alt'></i>
+            <i class='bx bx-command' ></i>
+            <i class='bx bx-ghost'></i>
+            <i class='bx bx-lock-open-alt' ></i>
+            <i class='bx bx-memory-card' ></i>
+            <i class='bx bx-notification' ></i>
+            <i class='bx bx-terminal' ></i>
+            <i class='bx bx-link' ></i>
+            <i class='bx bx-pulse' ></i>
+            <i class='bx bx-mouse-alt' ></i>
+            <i class='bx bx-user-voice' ></i>
+            <i class='bx bx-cloud' ></i>
         </div>
     </div>
-
-
-    <script>
-        function test(){
-            var random  = Math.floor(Math.random() * 200)
-            document.getElementById("warper").style.backgroundImage = 'linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url("https://source.unsplash.com/1920x1080/?sig=' + random +'/&mosque")';
-        }
-    </script>
+    <div class="row">
+        <div>
+            <i class='bx bx-window-alt' ></i>
+            <i class='bx bx-cctv' ></i>
+            <i class='bx bx-check-shield' ></i>
+            <i class='bx bx-scan' ></i>
+            <i class='bx bx-data' ></i>
+            <i class='bx bx-git-pull-request' ></i>
+            <i class='bx bx-atom' ></i>
+            <i class='bx bx-joystick' ></i>
+            <i class='bx bx-braille' ></i>
+            <i class='bx bx-code-alt'></i>
+            <i class='bx bx-command' ></i>
+            <i class='bx bx-ghost'></i>
+            <i class='bx bx-lock-open-alt' ></i>
+            <i class='bx bx-memory-card' ></i>
+            <i class='bx bx-notification' ></i>
+            <i class='bx bx-terminal' ></i>
+            <i class='bx bx-link' ></i>
+            <i class='bx bx-pulse' ></i>
+            <i class='bx bx-mouse-alt' ></i>
+            <i class='bx bx-user-voice' ></i>
+            <i class='bx bx-cloud' ></i>
+        </div>
+        <div>
+            <i class='bx bx-window-alt' ></i>
+            <i class='bx bx-cctv' ></i>
+            <i class='bx bx-check-shield' ></i>
+            <i class='bx bx-scan' ></i>
+            <i class='bx bx-data' ></i>
+            <i class='bx bx-git-pull-request' ></i>
+            <i class='bx bx-atom' ></i>
+            <i class='bx bx-joystick' ></i>
+            <i class='bx bx-braille' ></i>
+            <i class='bx bx-code-alt'></i>
+            <i class='bx bx-command' ></i>
+            <i class='bx bx-ghost'></i>
+            <i class='bx bx-lock-open-alt' ></i>
+            <i class='bx bx-memory-card' ></i>
+            <i class='bx bx-notification' ></i>
+            <i class='bx bx-terminal' ></i>
+            <i class='bx bx-link' ></i>
+            <i class='bx bx-pulse' ></i>
+            <i class='bx bx-mouse-alt' ></i>
+            <i class='bx bx-user-voice' ></i>
+            <i class='bx bx-cloud' ></i>
+        </div>
+    </div>
+    <div class="row">
+        <div>
+            <i class='bx bx-window-alt' ></i>
+            <i class='bx bx-cctv' ></i>
+            <i class='bx bx-check-shield' ></i>
+            <i class='bx bx-scan' ></i>
+            <i class='bx bx-data' ></i>
+            <i class='bx bx-git-pull-request' ></i>
+            <i class='bx bx-atom' ></i>
+            <i class='bx bx-joystick' ></i>
+            <i class='bx bx-braille' ></i>
+            <i class='bx bx-code-alt'></i>
+            <i class='bx bx-command' ></i>
+            <i class='bx bx-ghost'></i>
+            <i class='bx bx-lock-open-alt' ></i>
+            <i class='bx bx-memory-card' ></i>
+            <i class='bx bx-notification' ></i>
+            <i class='bx bx-terminal' ></i>
+            <i class='bx bx-link' ></i>
+            <i class='bx bx-pulse' ></i>
+            <i class='bx bx-mouse-alt' ></i>
+            <i class='bx bx-user-voice' ></i>
+            <i class='bx bx-cloud' ></i>
+        </div>
+        <div>
+            <i class='bx bx-window-alt' ></i>
+            <i class='bx bx-cctv' ></i>
+            <i class='bx bx-check-shield' ></i>
+            <i class='bx bx-scan' ></i>
+            <i class='bx bx-data' ></i>
+            <i class='bx bx-git-pull-request' ></i>
+            <i class='bx bx-atom' ></i>
+            <i class='bx bx-joystick' ></i>
+            <i class='bx bx-braille' ></i>
+            <i class='bx bx-code-alt'></i>
+            <i class='bx bx-command' ></i>
+            <i class='bx bx-ghost'></i>
+            <i class='bx bx-lock-open-alt' ></i>
+            <i class='bx bx-memory-card' ></i>
+            <i class='bx bx-notification' ></i>
+            <i class='bx bx-terminal' ></i>
+            <i class='bx bx-link' ></i>
+            <i class='bx bx-pulse' ></i>
+            <i class='bx bx-mouse-alt' ></i>
+            <i class='bx bx-user-voice' ></i>
+            <i class='bx bx-cloud' ></i>
+        </div>
+    </div>
+    <div class="row">
+        <div>
+            <i class='bx bx-window-alt' ></i>
+            <i class='bx bx-cctv' ></i>
+            <i class='bx bx-check-shield' ></i>
+            <i class='bx bx-scan' ></i>
+            <i class='bx bx-data' ></i>
+            <i class='bx bx-git-pull-request' ></i>
+            <i class='bx bx-atom' ></i>
+            <i class='bx bx-joystick' ></i>
+            <i class='bx bx-braille' ></i>
+            <i class='bx bx-code-alt'></i>
+            <i class='bx bx-command' ></i>
+            <i class='bx bx-ghost'></i>
+            <i class='bx bx-lock-open-alt' ></i>
+            <i class='bx bx-memory-card' ></i>
+            <i class='bx bx-notification' ></i>
+            <i class='bx bx-terminal' ></i>
+            <i class='bx bx-link' ></i>
+            <i class='bx bx-pulse' ></i>
+            <i class='bx bx-mouse-alt' ></i>
+            <i class='bx bx-user-voice' ></i>
+            <i class='bx bx-cloud' ></i>
+        </div>
+        <div>
+            <i class='bx bx-window-alt' ></i>
+            <i class='bx bx-cctv' ></i>
+            <i class='bx bx-check-shield' ></i>
+            <i class='bx bx-scan' ></i>
+            <i class='bx bx-data' ></i>
+            <i class='bx bx-git-pull-request' ></i>
+            <i class='bx bx-atom' ></i>
+            <i class='bx bx-joystick' ></i>
+            <i class='bx bx-braille' ></i>
+            <i class='bx bx-code-alt'></i>
+            <i class='bx bx-command' ></i>
+            <i class='bx bx-ghost'></i>
+            <i class='bx bx-lock-open-alt' ></i>
+            <i class='bx bx-memory-card' ></i>
+            <i class='bx bx-notification' ></i>
+            <i class='bx bx-terminal' ></i>
+            <i class='bx bx-link' ></i>
+            <i class='bx bx-pulse' ></i>
+            <i class='bx bx-mouse-alt' ></i>
+            <i class='bx bx-user-voice' ></i>
+            <i class='bx bx-cloud' ></i>
+        </div>
+    </div>
+    <div class="row">
+        <div>
+            <i class='bx bx-window-alt' ></i>
+            <i class='bx bx-cctv' ></i>
+            <i class='bx bx-check-shield' ></i>
+            <i class='bx bx-scan' ></i>
+            <i class='bx bx-data' ></i>
+            <i class='bx bx-git-pull-request' ></i>
+            <i class='bx bx-atom' ></i>
+            <i class='bx bx-joystick' ></i>
+            <i class='bx bx-braille' ></i>
+            <i class='bx bx-code-alt'></i>
+            <i class='bx bx-command' ></i>
+            <i class='bx bx-ghost'></i>
+            <i class='bx bx-lock-open-alt' ></i>
+            <i class='bx bx-memory-card' ></i>
+            <i class='bx bx-notification' ></i>
+            <i class='bx bx-terminal' ></i>
+            <i class='bx bx-link' ></i>
+            <i class='bx bx-pulse' ></i>
+            <i class='bx bx-mouse-alt' ></i>
+            <i class='bx bx-user-voice' ></i>
+            <i class='bx bx-cloud' ></i>
+        </div>
+        <div>
+            <i class='bx bx-window-alt' ></i>
+            <i class='bx bx-cctv' ></i>
+            <i class='bx bx-check-shield' ></i>
+            <i class='bx bx-scan' ></i>
+            <i class='bx bx-data' ></i>
+            <i class='bx bx-git-pull-request' ></i>
+            <i class='bx bx-atom' ></i>
+            <i class='bx bx-joystick' ></i>
+            <i class='bx bx-braille' ></i>
+            <i class='bx bx-code-alt'></i>
+            <i class='bx bx-command' ></i>
+            <i class='bx bx-ghost'></i>
+            <i class='bx bx-lock-open-alt' ></i>
+            <i class='bx bx-memory-card' ></i>
+            <i class='bx bx-notification' ></i>
+            <i class='bx bx-terminal' ></i>
+            <i class='bx bx-link' ></i>
+            <i class='bx bx-pulse' ></i>
+            <i class='bx bx-mouse-alt' ></i>
+            <i class='bx bx-user-voice' ></i>
+            <i class='bx bx-cloud' ></i>
+        </div>
+    </div>
+    <div class="row">
+        <div>
+            <i class='bx bx-window-alt' ></i>
+            <i class='bx bx-cctv' ></i>
+            <i class='bx bx-check-shield' ></i>
+            <i class='bx bx-scan' ></i>
+            <i class='bx bx-data' ></i>
+            <i class='bx bx-git-pull-request' ></i>
+            <i class='bx bx-atom' ></i>
+            <i class='bx bx-joystick' ></i>
+            <i class='bx bx-braille' ></i>
+            <i class='bx bx-code-alt'></i>
+            <i class='bx bx-command' ></i>
+            <i class='bx bx-ghost'></i>
+            <i class='bx bx-lock-open-alt' ></i>
+            <i class='bx bx-memory-card' ></i>
+            <i class='bx bx-notification' ></i>
+            <i class='bx bx-terminal' ></i>
+            <i class='bx bx-link' ></i>
+            <i class='bx bx-pulse' ></i>
+            <i class='bx bx-mouse-alt' ></i>
+            <i class='bx bx-user-voice' ></i>
+            <i class='bx bx-cloud' ></i>
+        </div>
+        <div>
+            <i class='bx bx-window-alt' ></i>
+            <i class='bx bx-cctv' ></i>
+            <i class='bx bx-check-shield' ></i>
+            <i class='bx bx-scan' ></i>
+            <i class='bx bx-data' ></i>
+            <i class='bx bx-git-pull-request' ></i>
+            <i class='bx bx-atom' ></i>
+            <i class='bx bx-joystick' ></i>
+            <i class='bx bx-braille' ></i>
+            <i class='bx bx-code-alt'></i>
+            <i class='bx bx-command' ></i>
+            <i class='bx bx-ghost'></i>
+            <i class='bx bx-lock-open-alt' ></i>
+            <i class='bx bx-memory-card' ></i>
+            <i class='bx bx-notification' ></i>
+            <i class='bx bx-terminal' ></i>
+            <i class='bx bx-link' ></i>
+            <i class='bx bx-pulse' ></i>
+            <i class='bx bx-mouse-alt' ></i>
+            <i class='bx bx-user-voice' ></i>
+            <i class='bx bx-cloud' ></i>
+        </div>
+    </div>
+    <div class="row">
+        <div>
+            <i class='bx bx-window-alt' ></i>
+            <i class='bx bx-cctv' ></i>
+            <i class='bx bx-check-shield' ></i>
+            <i class='bx bx-scan' ></i>
+            <i class='bx bx-data' ></i>
+            <i class='bx bx-git-pull-request' ></i>
+            <i class='bx bx-atom' ></i>
+            <i class='bx bx-joystick' ></i>
+            <i class='bx bx-braille' ></i>
+            <i class='bx bx-code-alt'></i>
+            <i class='bx bx-command' ></i>
+            <i class='bx bx-ghost'></i>
+            <i class='bx bx-lock-open-alt' ></i>
+            <i class='bx bx-memory-card' ></i>
+            <i class='bx bx-notification' ></i>
+            <i class='bx bx-terminal' ></i>
+            <i class='bx bx-link' ></i>
+            <i class='bx bx-pulse' ></i>
+            <i class='bx bx-mouse-alt' ></i>
+            <i class='bx bx-user-voice' ></i>
+            <i class='bx bx-cloud' ></i>
+        </div>
+        <div>
+            <i class='bx bx-window-alt' ></i>
+            <i class='bx bx-cctv' ></i>
+            <i class='bx bx-check-shield' ></i>
+            <i class='bx bx-scan' ></i>
+            <i class='bx bx-data' ></i>
+            <i class='bx bx-git-pull-request' ></i>
+            <i class='bx bx-atom' ></i>
+            <i class='bx bx-joystick' ></i>
+            <i class='bx bx-braille' ></i>
+            <i class='bx bx-code-alt'></i>
+            <i class='bx bx-command' ></i>
+            <i class='bx bx-ghost'></i>
+            <i class='bx bx-lock-open-alt' ></i>
+            <i class='bx bx-memory-card' ></i>
+            <i class='bx bx-notification' ></i>
+            <i class='bx bx-terminal' ></i>
+            <i class='bx bx-link' ></i>
+            <i class='bx bx-pulse' ></i>
+            <i class='bx bx-mouse-alt' ></i>
+            <i class='bx bx-user-voice' ></i>
+            <i class='bx bx-cloud' ></i>
+        </div>
+    </div>
+    <div class="row">
+        <div>
+            <i class='bx bx-window-alt' ></i>
+            <i class='bx bx-cctv' ></i>
+            <i class='bx bx-check-shield' ></i>
+            <i class='bx bx-scan' ></i>
+            <i class='bx bx-data' ></i>
+            <i class='bx bx-git-pull-request' ></i>
+            <i class='bx bx-atom' ></i>
+            <i class='bx bx-joystick' ></i>
+            <i class='bx bx-braille' ></i>
+            <i class='bx bx-code-alt'></i>
+            <i class='bx bx-command' ></i>
+            <i class='bx bx-ghost'></i>
+            <i class='bx bx-lock-open-alt' ></i>
+            <i class='bx bx-memory-card' ></i>
+            <i class='bx bx-notification' ></i>
+            <i class='bx bx-terminal' ></i>
+            <i class='bx bx-link' ></i>
+            <i class='bx bx-pulse' ></i>
+            <i class='bx bx-mouse-alt' ></i>
+            <i class='bx bx-user-voice' ></i>
+            <i class='bx bx-cloud' ></i>
+        </div>
+        <div>
+            <i class='bx bx-window-alt' ></i>
+            <i class='bx bx-cctv' ></i>
+            <i class='bx bx-check-shield' ></i>
+            <i class='bx bx-scan' ></i>
+            <i class='bx bx-data' ></i>
+            <i class='bx bx-git-pull-request' ></i>
+            <i class='bx bx-atom' ></i>
+            <i class='bx bx-joystick' ></i>
+            <i class='bx bx-braille' ></i>
+            <i class='bx bx-code-alt'></i>
+            <i class='bx bx-command' ></i>
+            <i class='bx bx-ghost'></i>
+            <i class='bx bx-lock-open-alt' ></i>
+            <i class='bx bx-memory-card' ></i>
+            <i class='bx bx-notification' ></i>
+            <i class='bx bx-terminal' ></i>
+            <i class='bx bx-link' ></i>
+            <i class='bx bx-pulse' ></i>
+            <i class='bx bx-mouse-alt' ></i>
+            <i class='bx bx-user-voice' ></i>
+            <i class='bx bx-cloud' ></i>
+        </div>
+    </div>
+    <div class="row">
+        <div>
+            <i class='bx bx-window-alt' ></i>
+            <i class='bx bx-cctv' ></i>
+            <i class='bx bx-check-shield' ></i>
+            <i class='bx bx-scan' ></i>
+            <i class='bx bx-data' ></i>
+            <i class='bx bx-git-pull-request' ></i>
+            <i class='bx bx-atom' ></i>
+            <i class='bx bx-joystick' ></i>
+            <i class='bx bx-braille' ></i>
+            <i class='bx bx-code-alt'></i>
+            <i class='bx bx-command' ></i>
+            <i class='bx bx-ghost'></i>
+            <i class='bx bx-lock-open-alt' ></i>
+            <i class='bx bx-memory-card' ></i>
+            <i class='bx bx-notification' ></i>
+            <i class='bx bx-terminal' ></i>
+            <i class='bx bx-link' ></i>
+            <i class='bx bx-pulse' ></i>
+            <i class='bx bx-mouse-alt' ></i>
+            <i class='bx bx-user-voice' ></i>
+            <i class='bx bx-cloud' ></i>
+        </div>
+        <div>
+            <i class='bx bx-window-alt' ></i>
+            <i class='bx bx-cctv' ></i>
+            <i class='bx bx-check-shield' ></i>
+            <i class='bx bx-scan' ></i>
+            <i class='bx bx-data' ></i>
+            <i class='bx bx-git-pull-request' ></i>
+            <i class='bx bx-atom' ></i>
+            <i class='bx bx-joystick' ></i>
+            <i class='bx bx-braille' ></i>
+            <i class='bx bx-code-alt'></i>
+            <i class='bx bx-command' ></i>
+            <i class='bx bx-ghost'></i>
+            <i class='bx bx-lock-open-alt' ></i>
+            <i class='bx bx-memory-card' ></i>
+            <i class='bx bx-notification' ></i>
+            <i class='bx bx-terminal' ></i>
+            <i class='bx bx-link' ></i>
+            <i class='bx bx-pulse' ></i>
+            <i class='bx bx-mouse-alt' ></i>
+            <i class='bx bx-user-voice' ></i>
+            <i class='bx bx-cloud' ></i>
+        </div>
+    </div>
+    <div class="row">
+        <div>
+            <i class='bx bx-window-alt' ></i>
+            <i class='bx bx-cctv' ></i>
+            <i class='bx bx-check-shield' ></i>
+            <i class='bx bx-scan' ></i>
+            <i class='bx bx-data' ></i>
+            <i class='bx bx-git-pull-request' ></i>
+            <i class='bx bx-atom' ></i>
+            <i class='bx bx-joystick' ></i>
+            <i class='bx bx-braille' ></i>
+            <i class='bx bx-code-alt'></i>
+            <i class='bx bx-command' ></i>
+            <i class='bx bx-ghost'></i>
+            <i class='bx bx-lock-open-alt' ></i>
+            <i class='bx bx-memory-card' ></i>
+            <i class='bx bx-notification' ></i>
+            <i class='bx bx-terminal' ></i>
+            <i class='bx bx-link' ></i>
+            <i class='bx bx-pulse' ></i>
+            <i class='bx bx-mouse-alt' ></i>
+            <i class='bx bx-user-voice' ></i>
+            <i class='bx bx-cloud' ></i>
+        </div>
+        <div>
+            <i class='bx bx-window-alt' ></i>
+            <i class='bx bx-cctv' ></i>
+            <i class='bx bx-check-shield' ></i>
+            <i class='bx bx-scan' ></i>
+            <i class='bx bx-data' ></i>
+            <i class='bx bx-git-pull-request' ></i>
+            <i class='bx bx-atom' ></i>
+            <i class='bx bx-joystick' ></i>
+            <i class='bx bx-braille' ></i>
+            <i class='bx bx-code-alt'></i>
+            <i class='bx bx-command' ></i>
+            <i class='bx bx-ghost'></i>
+            <i class='bx bx-lock-open-alt' ></i>
+            <i class='bx bx-memory-card' ></i>
+            <i class='bx bx-notification' ></i>
+            <i class='bx bx-terminal' ></i>
+            <i class='bx bx-link' ></i>
+            <i class='bx bx-pulse' ></i>
+            <i class='bx bx-mouse-alt' ></i>
+            <i class='bx bx-user-voice' ></i>
+            <i class='bx bx-cloud' ></i>
+        </div>
+    </div>
+    <div class="row">
+        <div>
+            <i class='bx bx-window-alt' ></i>
+            <i class='bx bx-cctv' ></i>
+            <i class='bx bx-check-shield' ></i>
+            <i class='bx bx-scan' ></i>
+            <i class='bx bx-data' ></i>
+            <i class='bx bx-git-pull-request' ></i>
+            <i class='bx bx-atom' ></i>
+            <i class='bx bx-joystick' ></i>
+            <i class='bx bx-braille' ></i>
+            <i class='bx bx-code-alt'></i>
+            <i class='bx bx-command' ></i>
+            <i class='bx bx-ghost'></i>
+            <i class='bx bx-lock-open-alt' ></i>
+            <i class='bx bx-memory-card' ></i>
+            <i class='bx bx-notification' ></i>
+            <i class='bx bx-terminal' ></i>
+            <i class='bx bx-link' ></i>
+            <i class='bx bx-pulse' ></i>
+            <i class='bx bx-mouse-alt' ></i>
+            <i class='bx bx-user-voice' ></i>
+            <i class='bx bx-cloud' ></i>
+        </div>
+        <div>
+            <i class='bx bx-window-alt' ></i>
+            <i class='bx bx-cctv' ></i>
+            <i class='bx bx-check-shield' ></i>
+            <i class='bx bx-scan' ></i>
+            <i class='bx bx-data' ></i>
+            <i class='bx bx-git-pull-request' ></i>
+            <i class='bx bx-atom' ></i>
+            <i class='bx bx-joystick' ></i>
+            <i class='bx bx-braille' ></i>
+            <i class='bx bx-code-alt'></i>
+            <i class='bx bx-command' ></i>
+            <i class='bx bx-ghost'></i>
+            <i class='bx bx-lock-open-alt' ></i>
+            <i class='bx bx-memory-card' ></i>
+            <i class='bx bx-notification' ></i>
+            <i class='bx bx-terminal' ></i>
+            <i class='bx bx-link' ></i>
+            <i class='bx bx-pulse' ></i>
+            <i class='bx bx-mouse-alt' ></i>
+            <i class='bx bx-user-voice' ></i>
+            <i class='bx bx-cloud' ></i>
+        </div>
+    </div>
+    <div class="row">
+        <div>
+            <i class='bx bx-window-alt' ></i>
+            <i class='bx bx-cctv' ></i>
+            <i class='bx bx-check-shield' ></i>
+            <i class='bx bx-scan' ></i>
+            <i class='bx bx-data' ></i>
+            <i class='bx bx-git-pull-request' ></i>
+            <i class='bx bx-atom' ></i>
+            <i class='bx bx-joystick' ></i>
+            <i class='bx bx-braille' ></i>
+            <i class='bx bx-code-alt'></i>
+            <i class='bx bx-command' ></i>
+            <i class='bx bx-ghost'></i>
+            <i class='bx bx-lock-open-alt' ></i>
+            <i class='bx bx-memory-card' ></i>
+            <i class='bx bx-notification' ></i>
+            <i class='bx bx-terminal' ></i>
+            <i class='bx bx-link' ></i>
+            <i class='bx bx-pulse' ></i>
+            <i class='bx bx-mouse-alt' ></i>
+            <i class='bx bx-user-voice' ></i>
+            <i class='bx bx-cloud' ></i>
+        </div>
+        <div>
+            <i class='bx bx-window-alt' ></i>
+            <i class='bx bx-cctv' ></i>
+            <i class='bx bx-check-shield' ></i>
+            <i class='bx bx-scan' ></i>
+            <i class='bx bx-data' ></i>
+            <i class='bx bx-git-pull-request' ></i>
+            <i class='bx bx-atom' ></i>
+            <i class='bx bx-joystick' ></i>
+            <i class='bx bx-braille' ></i>
+            <i class='bx bx-code-alt'></i>
+            <i class='bx bx-command' ></i>
+            <i class='bx bx-ghost'></i>
+            <i class='bx bx-lock-open-alt' ></i>
+            <i class='bx bx-memory-card' ></i>
+            <i class='bx bx-notification' ></i>
+            <i class='bx bx-terminal' ></i>
+            <i class='bx bx-link' ></i>
+            <i class='bx bx-pulse' ></i>
+            <i class='bx bx-mouse-alt' ></i>
+            <i class='bx bx-user-voice' ></i>
+            <i class='bx bx-cloud' ></i>
+        </div>
+    </div>
+    <div class="row">
+        <div>
+            <i class='bx bx-window-alt' ></i>
+            <i class='bx bx-cctv' ></i>
+            <i class='bx bx-check-shield' ></i>
+            <i class='bx bx-scan' ></i>
+            <i class='bx bx-data' ></i>
+            <i class='bx bx-git-pull-request' ></i>
+            <i class='bx bx-atom' ></i>
+            <i class='bx bx-joystick' ></i>
+            <i class='bx bx-braille' ></i>
+            <i class='bx bx-code-alt'></i>
+            <i class='bx bx-command' ></i>
+            <i class='bx bx-ghost'></i>
+            <i class='bx bx-lock-open-alt' ></i>
+            <i class='bx bx-memory-card' ></i>
+            <i class='bx bx-notification' ></i>
+            <i class='bx bx-terminal' ></i>
+            <i class='bx bx-link' ></i>
+            <i class='bx bx-pulse' ></i>
+            <i class='bx bx-mouse-alt' ></i>
+            <i class='bx bx-user-voice' ></i>
+            <i class='bx bx-cloud' ></i>
+        </div>
+        <div>
+            <i class='bx bx-window-alt' ></i>
+            <i class='bx bx-cctv' ></i>
+            <i class='bx bx-check-shield' ></i>
+            <i class='bx bx-scan' ></i>
+            <i class='bx bx-data' ></i>
+            <i class='bx bx-git-pull-request' ></i>
+            <i class='bx bx-atom' ></i>
+            <i class='bx bx-joystick' ></i>
+            <i class='bx bx-braille' ></i>
+            <i class='bx bx-code-alt'></i>
+            <i class='bx bx-command' ></i>
+            <i class='bx bx-ghost'></i>
+            <i class='bx bx-lock-open-alt' ></i>
+            <i class='bx bx-memory-card' ></i>
+            <i class='bx bx-notification' ></i>
+            <i class='bx bx-terminal' ></i>
+            <i class='bx bx-link' ></i>
+            <i class='bx bx-pulse' ></i>
+            <i class='bx bx-mouse-alt' ></i>
+            <i class='bx bx-user-voice' ></i>
+            <i class='bx bx-cloud' ></i>
+        </div>
+    </div>
+    <div class="row">
+        <div>
+            <i class='bx bx-window-alt' ></i>
+            <i class='bx bx-cctv' ></i>
+            <i class='bx bx-check-shield' ></i>
+            <i class='bx bx-scan' ></i>
+            <i class='bx bx-data' ></i>
+            <i class='bx bx-git-pull-request' ></i>
+            <i class='bx bx-atom' ></i>
+            <i class='bx bx-joystick' ></i>
+            <i class='bx bx-braille' ></i>
+            <i class='bx bx-code-alt'></i>
+            <i class='bx bx-command' ></i>
+            <i class='bx bx-ghost'></i>
+            <i class='bx bx-lock-open-alt' ></i>
+            <i class='bx bx-memory-card' ></i>
+            <i class='bx bx-notification' ></i>
+            <i class='bx bx-terminal' ></i>
+            <i class='bx bx-link' ></i>
+            <i class='bx bx-pulse' ></i>
+            <i class='bx bx-mouse-alt' ></i>
+            <i class='bx bx-user-voice' ></i>
+            <i class='bx bx-cloud' ></i>
+        </div>
+        <div>
+            <i class='bx bx-window-alt' ></i>
+            <i class='bx bx-cctv' ></i>
+            <i class='bx bx-check-shield' ></i>
+            <i class='bx bx-scan' ></i>
+            <i class='bx bx-data' ></i>
+            <i class='bx bx-git-pull-request' ></i>
+            <i class='bx bx-atom' ></i>
+            <i class='bx bx-joystick' ></i>
+            <i class='bx bx-braille' ></i>
+            <i class='bx bx-code-alt'></i>
+            <i class='bx bx-command' ></i>
+            <i class='bx bx-ghost'></i>
+            <i class='bx bx-lock-open-alt' ></i>
+            <i class='bx bx-memory-card' ></i>
+            <i class='bx bx-notification' ></i>
+            <i class='bx bx-terminal' ></i>
+            <i class='bx bx-link' ></i>
+            <i class='bx bx-pulse' ></i>
+            <i class='bx bx-mouse-alt' ></i>
+            <i class='bx bx-user-voice' ></i>
+            <i class='bx bx-cloud' ></i>
+        </div>
+    </div>
+    <div class="row">
+        <div>
+            <i class='bx bx-window-alt' ></i>
+            <i class='bx bx-cctv' ></i>
+            <i class='bx bx-check-shield' ></i>
+            <i class='bx bx-scan' ></i>
+            <i class='bx bx-data' ></i>
+            <i class='bx bx-git-pull-request' ></i>
+            <i class='bx bx-atom' ></i>
+            <i class='bx bx-joystick' ></i>
+            <i class='bx bx-braille' ></i>
+            <i class='bx bx-code-alt'></i>
+            <i class='bx bx-command' ></i>
+            <i class='bx bx-ghost'></i>
+            <i class='bx bx-lock-open-alt' ></i>
+            <i class='bx bx-memory-card' ></i>
+            <i class='bx bx-notification' ></i>
+            <i class='bx bx-terminal' ></i>
+            <i class='bx bx-link' ></i>
+            <i class='bx bx-pulse' ></i>
+            <i class='bx bx-mouse-alt' ></i>
+            <i class='bx bx-user-voice' ></i>
+            <i class='bx bx-cloud' ></i>
+        </div>
+        <div>
+            <i class='bx bx-window-alt' ></i>
+            <i class='bx bx-cctv' ></i>
+            <i class='bx bx-check-shield' ></i>
+            <i class='bx bx-scan' ></i>
+            <i class='bx bx-data' ></i>
+            <i class='bx bx-git-pull-request' ></i>
+            <i class='bx bx-atom' ></i>
+            <i class='bx bx-joystick' ></i>
+            <i class='bx bx-braille' ></i>
+            <i class='bx bx-code-alt'></i>
+            <i class='bx bx-command' ></i>
+            <i class='bx bx-ghost'></i>
+            <i class='bx bx-lock-open-alt' ></i>
+            <i class='bx bx-memory-card' ></i>
+            <i class='bx bx-notification' ></i>
+            <i class='bx bx-terminal' ></i>
+            <i class='bx bx-link' ></i>
+            <i class='bx bx-pulse' ></i>
+            <i class='bx bx-mouse-alt' ></i>
+            <i class='bx bx-user-voice' ></i>
+            <i class='bx bx-cloud' ></i>
+        </div>
+    </div>
+    <div class="row">
+        <div>
+            <i class='bx bx-window-alt' ></i>
+            <i class='bx bx-cctv' ></i>
+            <i class='bx bx-check-shield' ></i>
+            <i class='bx bx-scan' ></i>
+            <i class='bx bx-data' ></i>
+            <i class='bx bx-git-pull-request' ></i>
+            <i class='bx bx-atom' ></i>
+            <i class='bx bx-joystick' ></i>
+            <i class='bx bx-braille' ></i>
+            <i class='bx bx-code-alt'></i>
+            <i class='bx bx-command' ></i>
+            <i class='bx bx-ghost'></i>
+            <i class='bx bx-lock-open-alt' ></i>
+            <i class='bx bx-memory-card' ></i>
+            <i class='bx bx-notification' ></i>
+            <i class='bx bx-terminal' ></i>
+            <i class='bx bx-link' ></i>
+            <i class='bx bx-pulse' ></i>
+            <i class='bx bx-mouse-alt' ></i>
+            <i class='bx bx-user-voice' ></i>
+            <i class='bx bx-cloud' ></i>
+        </div>
+        <div>
+            <i class='bx bx-window-alt' ></i>
+            <i class='bx bx-cctv' ></i>
+            <i class='bx bx-check-shield' ></i>
+            <i class='bx bx-scan' ></i>
+            <i class='bx bx-data' ></i>
+            <i class='bx bx-git-pull-request' ></i>
+            <i class='bx bx-atom' ></i>
+            <i class='bx bx-joystick' ></i>
+            <i class='bx bx-braille' ></i>
+            <i class='bx bx-code-alt'></i>
+            <i class='bx bx-command' ></i>
+            <i class='bx bx-ghost'></i>
+            <i class='bx bx-lock-open-alt' ></i>
+            <i class='bx bx-memory-card' ></i>
+            <i class='bx bx-notification' ></i>
+            <i class='bx bx-terminal' ></i>
+            <i class='bx bx-link' ></i>
+            <i class='bx bx-pulse' ></i>
+            <i class='bx bx-mouse-alt' ></i>
+            <i class='bx bx-user-voice' ></i>
+            <i class='bx bx-cloud' ></i>
+        </div>
+    </div>
+    <div class="row">
+        <div>
+            <i class='bx bx-window-alt' ></i>
+            <i class='bx bx-cctv' ></i>
+            <i class='bx bx-check-shield' ></i>
+            <i class='bx bx-scan' ></i>
+            <i class='bx bx-data' ></i>
+            <i class='bx bx-git-pull-request' ></i>
+            <i class='bx bx-atom' ></i>
+            <i class='bx bx-joystick' ></i>
+            <i class='bx bx-braille' ></i>
+            <i class='bx bx-code-alt'></i>
+            <i class='bx bx-command' ></i>
+            <i class='bx bx-ghost'></i>
+            <i class='bx bx-lock-open-alt' ></i>
+            <i class='bx bx-memory-card' ></i>
+            <i class='bx bx-notification' ></i>
+            <i class='bx bx-terminal' ></i>
+            <i class='bx bx-link' ></i>
+            <i class='bx bx-pulse' ></i>
+            <i class='bx bx-mouse-alt' ></i>
+            <i class='bx bx-user-voice' ></i>
+            <i class='bx bx-cloud' ></i>
+        </div>
+        <div>
+            <i class='bx bx-window-alt' ></i>
+            <i class='bx bx-cctv' ></i>
+            <i class='bx bx-check-shield' ></i>
+            <i class='bx bx-scan' ></i>
+            <i class='bx bx-data' ></i>
+            <i class='bx bx-git-pull-request' ></i>
+            <i class='bx bx-atom' ></i>
+            <i class='bx bx-joystick' ></i>
+            <i class='bx bx-braille' ></i>
+            <i class='bx bx-code-alt'></i>
+            <i class='bx bx-command' ></i>
+            <i class='bx bx-ghost'></i>
+            <i class='bx bx-lock-open-alt' ></i>
+            <i class='bx bx-memory-card' ></i>
+            <i class='bx bx-notification' ></i>
+            <i class='bx bx-terminal' ></i>
+            <i class='bx bx-link' ></i>
+            <i class='bx bx-pulse' ></i>
+            <i class='bx bx-mouse-alt' ></i>
+            <i class='bx bx-user-voice' ></i>
+            <i class='bx bx-cloud' ></i>
+        </div>
+    </div>
+    <div class="row">
+        <div>
+            <i class='bx bx-window-alt' ></i>
+            <i class='bx bx-cctv' ></i>
+            <i class='bx bx-check-shield' ></i>
+            <i class='bx bx-scan' ></i>
+            <i class='bx bx-data' ></i>
+            <i class='bx bx-git-pull-request' ></i>
+            <i class='bx bx-atom' ></i>
+            <i class='bx bx-joystick' ></i>
+            <i class='bx bx-braille' ></i>
+            <i class='bx bx-code-alt'></i>
+            <i class='bx bx-command' ></i>
+            <i class='bx bx-ghost'></i>
+            <i class='bx bx-lock-open-alt' ></i>
+            <i class='bx bx-memory-card' ></i>
+            <i class='bx bx-notification' ></i>
+            <i class='bx bx-terminal' ></i>
+            <i class='bx bx-link' ></i>
+            <i class='bx bx-pulse' ></i>
+            <i class='bx bx-mouse-alt' ></i>
+            <i class='bx bx-user-voice' ></i>
+            <i class='bx bx-cloud' ></i>
+        </div>
+        <div>
+            <i class='bx bx-window-alt' ></i>
+            <i class='bx bx-cctv' ></i>
+            <i class='bx bx-check-shield' ></i>
+            <i class='bx bx-scan' ></i>
+            <i class='bx bx-data' ></i>
+            <i class='bx bx-git-pull-request' ></i>
+            <i class='bx bx-atom' ></i>
+            <i class='bx bx-joystick' ></i>
+            <i class='bx bx-braille' ></i>
+            <i class='bx bx-code-alt'></i>
+            <i class='bx bx-command' ></i>
+            <i class='bx bx-ghost'></i>
+            <i class='bx bx-lock-open-alt' ></i>
+            <i class='bx bx-memory-card' ></i>
+            <i class='bx bx-notification' ></i>
+            <i class='bx bx-terminal' ></i>
+            <i class='bx bx-link' ></i>
+            <i class='bx bx-pulse' ></i>
+            <i class='bx bx-mouse-alt' ></i>
+            <i class='bx bx-user-voice' ></i>
+            <i class='bx bx-cloud' ></i>
+        </div>
+    </div>
+    <div class="row">
+        <div>
+            <i class='bx bx-window-alt' ></i>
+            <i class='bx bx-cctv' ></i>
+            <i class='bx bx-check-shield' ></i>
+            <i class='bx bx-scan' ></i>
+            <i class='bx bx-data' ></i>
+            <i class='bx bx-git-pull-request' ></i>
+            <i class='bx bx-atom' ></i>
+            <i class='bx bx-joystick' ></i>
+            <i class='bx bx-braille' ></i>
+            <i class='bx bx-code-alt'></i>
+            <i class='bx bx-command' ></i>
+            <i class='bx bx-ghost'></i>
+            <i class='bx bx-lock-open-alt' ></i>
+            <i class='bx bx-memory-card' ></i>
+            <i class='bx bx-notification' ></i>
+            <i class='bx bx-terminal' ></i>
+            <i class='bx bx-link' ></i>
+            <i class='bx bx-pulse' ></i>
+            <i class='bx bx-mouse-alt' ></i>
+            <i class='bx bx-user-voice' ></i>
+            <i class='bx bx-cloud' ></i>
+        </div>
+        <div>
+            <i class='bx bx-window-alt' ></i>
+            <i class='bx bx-cctv' ></i>
+            <i class='bx bx-check-shield' ></i>
+            <i class='bx bx-scan' ></i>
+            <i class='bx bx-data' ></i>
+            <i class='bx bx-git-pull-request' ></i>
+            <i class='bx bx-atom' ></i>
+            <i class='bx bx-joystick' ></i>
+            <i class='bx bx-braille' ></i>
+            <i class='bx bx-code-alt'></i>
+            <i class='bx bx-command' ></i>
+            <i class='bx bx-ghost'></i>
+            <i class='bx bx-lock-open-alt' ></i>
+            <i class='bx bx-memory-card' ></i>
+            <i class='bx bx-notification' ></i>
+            <i class='bx bx-terminal' ></i>
+            <i class='bx bx-link' ></i>
+            <i class='bx bx-pulse' ></i>
+            <i class='bx bx-mouse-alt' ></i>
+            <i class='bx bx-user-voice' ></i>
+            <i class='bx bx-cloud' ></i>
+        </div>
+    </div>
+    <div class="row">
+        <div>
+            <i class='bx bx-window-alt' ></i>
+            <i class='bx bx-cctv' ></i>
+            <i class='bx bx-check-shield' ></i>
+            <i class='bx bx-scan' ></i>
+            <i class='bx bx-data' ></i>
+            <i class='bx bx-git-pull-request' ></i>
+            <i class='bx bx-atom' ></i>
+            <i class='bx bx-joystick' ></i>
+            <i class='bx bx-braille' ></i>
+            <i class='bx bx-code-alt'></i>
+            <i class='bx bx-command' ></i>
+            <i class='bx bx-ghost'></i>
+            <i class='bx bx-lock-open-alt' ></i>
+            <i class='bx bx-memory-card' ></i>
+            <i class='bx bx-notification' ></i>
+            <i class='bx bx-terminal' ></i>
+            <i class='bx bx-link' ></i>
+            <i class='bx bx-pulse' ></i>
+            <i class='bx bx-mouse-alt' ></i>
+            <i class='bx bx-user-voice' ></i>
+            <i class='bx bx-cloud' ></i>
+        </div>
+        <div>
+            <i class='bx bx-window-alt' ></i>
+            <i class='bx bx-cctv' ></i>
+            <i class='bx bx-check-shield' ></i>
+            <i class='bx bx-scan' ></i>
+            <i class='bx bx-data' ></i>
+            <i class='bx bx-git-pull-request' ></i>
+            <i class='bx bx-atom' ></i>
+            <i class='bx bx-joystick' ></i>
+            <i class='bx bx-braille' ></i>
+            <i class='bx bx-code-alt'></i>
+            <i class='bx bx-command' ></i>
+            <i class='bx bx-ghost'></i>
+            <i class='bx bx-lock-open-alt' ></i>
+            <i class='bx bx-memory-card' ></i>
+            <i class='bx bx-notification' ></i>
+            <i class='bx bx-terminal' ></i>
+            <i class='bx bx-link' ></i>
+            <i class='bx bx-pulse' ></i>
+            <i class='bx bx-mouse-alt' ></i>
+            <i class='bx bx-user-voice' ></i>
+            <i class='bx bx-cloud' ></i>
+        </div>
+    </div>
+</section>
+        <div class="kartu"  >
+            <div class="konten">
+                <span>● aldy.xyz</span>
+                <h1>Coming Soon!</h1>
+                <p>Web ini masih dalam tahap pengembangan</p>
+            </div>
+        </div>
+</div>
+<script type="text/javascript" src="vanilla-tilt.js"></script>
+<script type="text/javascript">
+	VanillaTilt.init(document.querySelector(".kartu"), {
+		max: 15,
+		speed: 700,
+                glare: true,
+		gyroscope: true,
+		gyroscopeMinAngleX: -15,
+                gyroscopeMaxAngleX:  15,      
+ 	        gyroscopeMinAngleY: -15,     
+	        gyroscopeMaxAngleY:  15, 
+                "max-glare": 0.3
+	});
+</script>
 </body>
 </html>
